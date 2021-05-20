@@ -1,4 +1,16 @@
 # Add your details
+spring:
+  application:
+    name: admin-server
+    
+  data:
+    mongodb:
+      host: localhost
+      database: hotel
+      port: 27017
+  logging:
+    level:'[org.springframework.data.mongodb]': debug
+      
 eureka:
   client:
     fetch-registry: true
@@ -8,3 +20,5 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
+    
+    
