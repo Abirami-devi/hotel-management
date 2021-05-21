@@ -1,8 +1,5 @@
 # Add your details
-spring:
-  application:
-    name: admin-server
-    
+spring:   
   data:
     mongodb:
       host: localhost
@@ -11,6 +8,11 @@ spring:
       
   logging:
     level:'[org.springframework.data.mongodb]': debug
+    
+  boot:
+    admin:
+      client:
+        url: http://localhost:9494
       
 eureka:
   client:
